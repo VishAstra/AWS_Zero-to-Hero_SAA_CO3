@@ -1,15 +1,11 @@
    ## Elastic Compute Cloud (EC2)
-    
-    
-
-    
     - Regional Service
     - EC2 (Elastic Compute Cloud) is an **Infrastructure as a Service (IaaS)**
     - Stopping & Starting an instance may change its ***public IP but not its private IP***
     - **AWS Compute Optimizer** recommends optimal AWS Compute resources for your workloads
     - There is a vCPU-based On-Demand Instance soft limit per region
     
-    ## User Data
+## User Data
     
     - Some commands that run when the instance is launched for the first time (doesn't execute for subsequent runs)
     - Used to automate **dynamic** boot tasks (that cannot be done using AMIs)
@@ -35,7 +31,7 @@
         FLASK_APP=application.py /usr/local/bin/flask run --host=0.0.0.0 --port=80`
         
     
-    ## Instance Classes
+## Instance Classes
     
     - **General Purpose**
         - Great for a diversity of workloads such as **web servers** or **code repositories**
@@ -53,7 +49,7 @@
             - OLTP(Online Transaction Processing) systems
             - Distributed File System (DFS)
     
-    ## Security Groups
+   ## Security Groups
     
     - ***Only contain Allow rules***
     - External firewall for EC2 instances (if a request is blocked by SG, instance will never know)
@@ -68,8 +64,8 @@
     - Bound to a VPC (and hence to a region)
     - Recommended to maintain a separate security group for SSH access
     - Blocked requests will give a **Time Out** error
-    
-    ## IAM Roles for EC2 instances👇
+
+## IAM Roles for EC2 instances👇
     
     - Never enter AWS credentials into the EC2 instance, instead attach [**IAM Roles]** to the instances ie IAM ReadOnly access
     
