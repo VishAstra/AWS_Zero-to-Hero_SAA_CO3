@@ -49,7 +49,7 @@
             - OLTP(Online Transaction Processing) systems
             - Distributed File System (DFS)
     
-   ## Security Groups
+## Security Groups
     
     - ***Only contain Allow rules***
     - External firewall for EC2 instances (if a request is blocked by SG, instance will never know)
